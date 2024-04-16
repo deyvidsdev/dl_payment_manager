@@ -14,3 +14,4 @@ class DlProject(models.Model):
     ], string='Estado')
 
     payment_ids = fields.One2many('dl.payment', 'project_id', string='Pagos')
+    company_id = fields.Many2one('dl.company', string='Company')

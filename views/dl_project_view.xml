@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+
+    <record id="dl_project_view_tree" model="ir.ui.view">
+        <field name="name">dl.project.view.tree</field>
+        <field name="model">dl.project</field>
+        <field name="arch" type="xml">
+            <tree>
+                <field name="name" />
+                <field name="star_date" />
+                <field name="end_date" />
+                <field name="state" />
+            </tree>
+        </field>
+    </record>
+
+
+    <record id="dl_project_view_form" model="ir.ui.view">
+        <field name="name">dl.project.view.form</field>
+        <field name="model">dl.project</field>
+        <field name="arch" type="xml">
+            <form string="">
+                <sheet>
+                    <div class="oe_title mb24">
+                        <h1>
+                            <field name="name" />
+                        </h1>
+                    </div>
+                    
+
+                    <group col="2">
+                        <group>
+                            <field name="star_date" />
+                            <field name="end_date" />  
+                        </group>
+                        <group>
+                            <field name="company_id" />
+                        </group>
+                    </group>
+                    
+
+                    <notebook>
+                        <page name="payment" string="Payment">
+                            <field name="payment_ids" />
+                        </page>
+                    </notebook>
+                </sheet>
+            </form>
+        </field>
+    </record>
+
+</odoo>

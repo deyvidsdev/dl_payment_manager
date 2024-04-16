@@ -11,7 +11,11 @@
         'base',
     ],
     'data': [
-        
+        'menus/menu.xml',
+        'views/dl_project_view.xml', 
+        'views/dl_payment_view.xml',
+        'views/dl_company_view.xml',
+        'security/ir_model_access.xml',
     ],
     'demo': [
         
