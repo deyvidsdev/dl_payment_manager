@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+
+    <record id="dl_employee_view_tree" model="ir.ui.view">
+        <field name="name">dl.employee.view.tree</field>
+        <field name="model">dl.employee</field>
+        <field name="arch" type="xml">
+            <tree string="">
+                <field name="name" />
+                <field name="last_name" />
+                <field name="address" />
+                <field name="birthdate" />
+                <field name="salary" />
+            </tree>
+        </field>
+    </record>
+
+    <record id="dl_employee_view_form" model="ir.ui.view">
+        <field name="name">dl.employee.view.form</field>
+        <field name="model">dl.employee</field>
+        <field name="arch" type="xml">
+            <form string="">
+                <sheet>
+                    <div class="oe_title mb24">
+                        <h1>
+                            <field name="name" />
+                        </h1>
+
+                        <group col="2">
+                            <group>
+                                <field name="last_name" />  
+                                <field name="address" />
+                            </group>
+                            <group>
+                                <field name="birthdate" />
+                                <field name="salary" />
+                            </group>
+                        </group>
+                    </div>
+                </sheet>
+            </form>
+        </field>
+    </record>
+
+</odoo>

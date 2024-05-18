@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<templates xml:space="preserve">
+
+    <t t-name="dl_payment_manager.welcome" owl="1">
+        <div class="o_action_manager custom-whatsapp-suite" bis_skin_checked="1" style="overflow: auto !important;">
+            <div class="o_dashboard_view container mt-5">
+                <div class="o_dashboard_header mb-4 text-center">
+                    <h1>Dashboard</h1>
+                    <p>Payment Manager</p>
+                </div>
+
+                <div class="grid-stack" style="max-height:100vh; overflow-y:scroll">
+
+                    <div class="grid-stack-item" gs-w="4" gs-h="3">
+                        <div class="grid-stack-item-content card-body">
+                            <canvas t-ref="categoriasProductosChart"></canvas>
+                        </div>
+                    </div>
+                    <div class="grid-stack-item" gs-w="4" gs-h="3">
+                        <div class="grid-stack-item-content card-body">
+                            <canvas t-ref="productosSincronizadosChart"></canvas>
+                        </div>
+                    </div>
+                    <div class="grid-stack-item" gs-w="4" gs-h="3">
+                        <div class="grid-stack-item-content card-body">
+                            <canvas t-ref="line1"></canvas>
+                        </div>
+                    </div>
+                    <!-- GRAPH -->
+                    <div class="grid-stack-item" gs-w="4" gs-h="4">
+                        <div class="grid-stack-item-content card-body">
+                            <canvas t-ref="pie1"></canvas>
+                        </div>
+                    </div>
+                    <div class="grid-stack-item" gs-w="4" gs-h="4">
+                        <div class="grid-stack-item-content card-body">
+                            <canvas t-ref="doughnut1"></canvas>
+                        </div>
+                    </div>
+                    <div class="grid-stack-item" gs-w="4" gs-h="4">
+                        <div class="grid-stack-item-content card-body">
+                            <canvas t-ref="radar1"></canvas>
+                        </div>
+                    </div>
+                    <!-- GRAPH -->
+                    <div class="grid-stack-item" gs-w="4" gs-h="3">
+                        <div class="grid-stack-item-content card-body">
+                            <canvas t-ref="bar1"></canvas>
+                        </div>
+                    </div>
+                    <div class="grid-stack-item" gs-w="4" gs-h="3">
+                        <div class="grid-stack-item-content card-body">
+                            <canvas t-ref="polarArea1"></canvas>
+                        </div>
+                    </div>
+                    <div class="grid-stack-item" gs-w="4" gs-h="3">
+                        <div class="grid-stack-item-content card-body">
+                            <canvas t-ref="bubble1"></canvas>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+
+
+    </t>
+
+</templates>

@@ -23,7 +23,7 @@
 
                     <notebook>
                         <page name="project" string="Proyecto">
-                            <field name="project_ids" />
+                            <field name="project_ids" readonly="1"/>
                         </page>
                     </notebook>
                 </sheet>

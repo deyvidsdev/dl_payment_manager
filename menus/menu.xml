@@ -19,31 +19,56 @@
         <field name="view_mode">tree,form</field>
     </record>
 
+    <record id="action_view_employee" model="ir.actions.act_window">
+        <field name="name">Employee</field>
+        <field name="res_model">dl.employee</field>
+        <field name="view_mode">tree,form</field>
+    </record>
+
+    <record model="ir.actions.client" id="welcome">
+        <field name="name">Dashboard</field>
+        <field name="tag">odoo-mercadolibre.welcome</field>
+    </record>
+
     <menuitem
         id="payment_manager_menu"
         name="Administrador de Pagos"
         action="dl_payment_manager.action_view_project"
     />
+
+    <menuitem 
+        name="Dashboard" 
+        id="dl-dashboard" 
+        parent="dl_payment_manager.payment_manager_menu" 
+        action="dl_payment_manager.welcome" 
+        sequence="1" />
     
     <menuitem
         id="project_menu"
         name="Proyectos"
         parent="dl_payment_manager.payment_manager_menu"
         action="dl_payment_manager.action_view_project"
-        sequence="1"/>
+        sequence="2"/>
     
     <menuitem
         id="payment_menu"
         name="Pagos"
         parent="dl_payment_manager.payment_manager_menu"
         action="dl_payment_manager.action_view_paymet"
-        sequence="1"/>
+        sequence="3"/>
     
     <menuitem
         id="company_menu"
-        name="Compañia"
+        name="Compañias"
         parent="dl_payment_manager.payment_manager_menu"
         action="dl_payment_manager.action_view_company"
-        sequence="1"/>
+        sequence="4"/>
+
+    <menuitem
+        id="employee_menu"
+        name="Empleados"
+        parent="dl_payment_manager.payment_manager_menu"
+        action="dl_payment_manager.action_view_employee"
+        sequence="5"/>
 
 </odoo>

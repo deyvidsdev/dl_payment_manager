@@ -15,6 +15,7 @@
         'views/dl_project_view.xml', 
         'views/dl_payment_view.xml',
         'views/dl_company_view.xml',
+        'views/dl_employee_view.xml',
         'security/ir_model_access.xml',
     ],
     'demo': [
@@ -23,6 +24,12 @@
     'auto_install': False,
     'application': False,
     'assets': {
-        
+        'web.assets_backend': [
+            'dl_payment_manager/static/src/js/gridstack-all.js',
+            'dl_payment_manager/static/src/xml/dl-dashboard.xml',
+            'dl_payment_manager/static/src/js/dl-dashboard.js',
+            'dl_payment_manager/static/src/css/gridstack.css',
+            'dl_payment_manager/static/src/css/gridstack-extra.css',            
+        ]
     }
 }
