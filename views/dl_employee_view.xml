@@ -7,7 +7,6 @@
         <field name="arch" type="xml">
             <tree string="">
                 <field name="name" />
-                <field name="last_name" />
                 <field name="address" />
                 <field name="birthdate" />
                 <field name="salary" />
@@ -25,18 +24,19 @@
                         <h1>
                             <field name="name" />
                         </h1>
-
-                        <group col="2">
-                            <group>
-                                <field name="last_name" />  
-                                <field name="address" />
-                            </group>
-                            <group>
-                                <field name="birthdate" />
-                                <field name="salary" />
-                            </group>
-                        </group>
                     </div>
+
+                    <group col="2">
+                        <group>
+                            <field name="email" />  
+                            <field name="address" />
+                        </group>
+                        <group>
+                            <field name="birthdate" />
+                            <field name="salary" />
+                        </group>
+                    </group>
+
                 </sheet>
             </form>
         </field>

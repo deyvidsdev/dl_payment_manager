@@ -8,6 +8,7 @@ class DlPayment(models.Model):
         ('pending', 'Pendiente'),
         ('paid', 'Pagado')
     ], string = 'Estado')
-
+    
+    payment_date = fields.Date('Date')
     project_id = fields.Many2one('dl.project', string='Proyecto')
     
