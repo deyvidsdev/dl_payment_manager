@@ -18,7 +18,6 @@
         </field>
     </record>
 
-
     <record id="dl_project_view_form" model="ir.ui.view">
         <field name="name">dl.project.view.form</field>
         <field name="model">dl.project</field>
@@ -75,6 +74,25 @@
                     </notebook>
                 </sheet>
             </form>
+        </field>
+    </record>
+
+    <record id="dl_project_view_search" model="ir.ui.view">
+        <field name="name">dl.project.view.search</field>
+        <field name="model">dl.project</field>
+        <field name="arch" type="xml">
+            <search string="Payments Search">
+
+                <field name="name"/>
+                <field name="company_id" />
+
+                <group string="Estados">
+                    <filter string="Borrador" name="draft" domain="[('state', '=', 'draft')]"/>
+                    <filter string="En progreso" name="in_progress" domain="[('state', '=', 'in_progress')]"/>
+                    <filter string="Completado" name="completed" domain="[('state', '=', 'completed')]"/>
+                    <filter string="Cancelado" name="cancelled" domain="[('state', '=', 'cancelled')]"/>
+                </group>
+            </search>
         </field>
     </record>
 
