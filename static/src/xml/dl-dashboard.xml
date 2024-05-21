@@ -10,24 +10,30 @@
                 </div>
 
                 <div class="grid-stack" style="max-height:100vh; overflow-y:scroll">
+                    
+                    <div class="grid-stack-item" gs-w="4" gs-h="4">
+                        <div class="grid-stack-item-content card-body">
+                            <canvas t-ref="AnnualIncome"></canvas>
+                        </div>
+                    </div>
 
-                    <div class="grid-stack-item" gs-w="4" gs-h="3">
+                    <div class="grid-stack-item" gs-w="4" gs-h="4">
                         <div class="grid-stack-item-content card-body">
-                            <canvas t-ref="categoriasProductosChart"></canvas>
+                            <canvas t-ref="quarterlyProgress"></canvas>
                         </div>
                     </div>
-                    <div class="grid-stack-item" gs-w="4" gs-h="3">
+                    <div class="grid-stack-item" gs-w="4" gs-h="4">
                         <div class="grid-stack-item-content card-body">
-                            <canvas t-ref="productosSincronizadosChart"></canvas>
+                            <canvas t-ref="doughnutData"></canvas>
                         </div>
                     </div>
-                    <div class="grid-stack-item" gs-w="4" gs-h="3">
+                    <!-- <div class="grid-stack-item" gs-w="4" gs-h="3">
                         <div class="grid-stack-item-content card-body">
                             <canvas t-ref="line1"></canvas>
                         </div>
-                    </div>
+                    </div> -->
                     <!-- GRAPH -->
-                    <div class="grid-stack-item" gs-w="4" gs-h="4">
+                    <!-- <div class="grid-stack-item" gs-w="4" gs-h="4">
                         <div class="grid-stack-item-content card-body">
                             <canvas t-ref="pie1"></canvas>
                         </div>
@@ -41,9 +47,9 @@
                         <div class="grid-stack-item-content card-body">
                             <canvas t-ref="radar1"></canvas>
                         </div>
-                    </div>
+                    </div> -->
                     <!-- GRAPH -->
-                    <div class="grid-stack-item" gs-w="4" gs-h="3">
+                    <!-- <div class="grid-stack-item" gs-w="4" gs-h="3">
                         <div class="grid-stack-item-content card-body">
                             <canvas t-ref="bar1"></canvas>
                         </div>
@@ -57,7 +63,7 @@
                         <div class="grid-stack-item-content card-body">
                             <canvas t-ref="bubble1"></canvas>
                         </div>
-                    </div>
+                    </div> -->
 
                 </div>
             </div>

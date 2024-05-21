@@ -18,4 +18,8 @@ class DlProject(models.Model):
     payment_ids = fields.One2many('dl.payment', 'project_id', string='Pagos')
     company_id = fields.Many2one('dl.company', string='Company')
     deliverable_ids = fields.One2many('dl.deliverable', 'project_id', string='Entregables')
-    employee_ids = fields.Many2many('dl.employee', string='Empleados')
+    employee_ids = fields.Many2many('hr.employee', string='Empleados')
+    
+    @api.model
+    def get_project_quarterly(self):
+        return "Funcion project_quarterly"

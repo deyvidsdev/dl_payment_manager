@@ -6,22 +6,10 @@
         <field name="res_model">dl.project</field>
         <field name="view_mode">tree,form</field>
     </record>
-    
-    <!-- <record id="action_view_paymet" model="ir.actions.act_window">
-        <field name="name">Payment</field>
-        <field name="res_model">dl.payment</field>
-        <field name="view_mode">tree,form</field>
-    </record> -->
 
     <record id="action_view_company" model="ir.actions.act_window">
         <field name="name">Company</field>
         <field name="res_model">dl.company</field>
-        <field name="view_mode">tree,form</field>
-    </record>
-
-    <record id="action_view_employee" model="ir.actions.act_window">
-        <field name="name">Employee</field>
-        <field name="res_model">dl.employee</field>
         <field name="view_mode">tree,form</field>
     </record>
 
@@ -30,10 +18,16 @@
         <field name="tag">odoo-mercadolibre.welcome</field>
     </record>
 
+    <record id="action_view_employee" model="ir.actions.act_window">
+        <field name="name">Employees</field>
+        <field name="res_model">hr.employee</field>
+        <field name="view_mode">kanban,tree,form</field>
+    </record>
+
     <menuitem
         id="payment_manager_menu"
         name="Administrador de Pagos"
-        action="dl_payment_manager.action_view_project"
+        action="dl_payment_manager.welcome"
     />
 
     <menuitem 
@@ -49,13 +43,6 @@
         parent="dl_payment_manager.payment_manager_menu"
         action="dl_payment_manager.action_view_project"
         sequence="2"/>
-    
-    <!-- <menuitem
-        id="payment_menu"
-        name="Pagos"
-        parent="dl_payment_manager.payment_manager_menu"
-        action="dl_payment_manager.action_view_paymet"
-        sequence="3"/> -->
     
     <menuitem
         id="company_menu"

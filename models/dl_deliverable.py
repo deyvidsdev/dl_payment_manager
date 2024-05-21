@@ -10,5 +10,6 @@ class DlDeliverable(models.Model):
     project_id = fields.Many2one('dl.project', string='Proyecto')
     state = fields.Selection([
         ('in_progress', 'En progreso'),
-        ('completed', 'Completado')
+        ('incomplete', 'Incompleto'),
+        ('completed', 'Completado'),
     ], string='Estado')
