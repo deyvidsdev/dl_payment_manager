@@ -71,6 +71,5 @@ Este módulo está distribuido bajo la licencia **LGPL-3**.
 
 ## Contacto
 
-**Digilab Soluciones S.A.C**  
 Correo: [deyvidsalvino@gmail.com](mailto:deyvidsalvino@gmail.com)  
 Teléfono: +51 923 609 010
